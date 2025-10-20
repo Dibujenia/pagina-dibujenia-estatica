@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dibujenia, Retratos al Carbón | Contacto</title> <!-- Título actualizado -->
+    <!-- Carga de Tailwind CSS para un diseño limpio y responsive -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Estilos personalizados para la fuente y la sombra */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .contact-card {
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        /* Clase específica para el tamaño del logo */
+        .logo-container {
+            width: 80px;
+            height: 80px;
+        }
+        .logo-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%; /* Si quieres que el logo sea circular */
+            object-fit: contain;
+        }
+        /* Estilo para el fallback del logo */
+        .emoji-icon {
+            font-size: 3rem; 
+            line-height: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="p-6 md:p-10 w-full max-w-sm">
+        <!-- Tarjeta de Contacto Principal -->
+        <div class="contact-card bg-white rounded-xl overflow-hidden p-6 text-center">
+            
+            <!-- LOGO O FALLBACK -->
+            <div id="logo-display" class="mx-auto logo-container bg-gray-200 rounded-full flex items-center justify-center mb-4 overflow-hidden"> 
+                <img 
+                    src="logo.png" 
+                    alt="Logo de DIBUJENIA" 
+                    class="logo-img"
+                    onerror="this.onerror=null; this.src=''; this.outerHTML='<span class=\'emoji-icon\'>🖌️</span>'; this.parentNode.classList.remove('overflow-hidden');" 
+                >
+            </div>
+
+            <!-- Título y Rol (Actualizados) -->
+            <h1 class="text-2xl font-bold text-gray-800 mb-1">Dibujenia, retratos al carbón</h1> 
+            <p class="text-sm text-gray-500 mb-6">Estudio de arte a partir de tu fotografía.</p>
+            
+            <p class="text-sm text-gray-600 mb-8">
+                Esta web ya no está activa. Puedes contactarnos a través de:
+            </p>
+
+            <!-- Datos de Contacto (Actualizados - Solo Email y WhatsApp) -->
+            <div class="space-y-4">
+                
+                <!-- EMAIL -->
+                <div class="flex items-center justify-center space-x-3 bg-gray-50 p-3 rounded-lg">
+                    <!-- Icono Email -->
+                    <svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-9 10V3"></path></svg>
+                    <a href="mailto:info.es@dibujenia.com" class="text-gray-700 font-medium hover:text-gray-900 transition duration-150 text-base">
+                        info.es@dibujenia.com
+                    </a>
+                </div>
+                
+                <!-- WHATSAPP (Destacado en color verde) -->
+                <div class="flex items-center justify-center space-x-3 bg-green-100 p-3 rounded-lg"> 
+                    <!-- Icono WhatsApp -->
+                    <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.05 13.88a10.003 10.003 0 0017.9 0l.05-.12a.5.5 0 00-.5-.5H3.5a.5.5 0 00-.5.5l.05.12zM12 21a9 9 0 100-18 9 9 0 000 18z" opacity=".4"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 9l-3 3-3-3"></path></svg>
+                    <a href="https://wa.me/34678452483" target="_blank" class="text-green-700 font-bold text-base hover:text-green-800 transition duration-150">
+                        WhatsApp: +34 678 452 483
+                    </a>
+                </div>
+
+            </div>
+            
+        </div>
+        <!-- Pie de página discreto -->
+        <p class="text-xs text-gray-400 mt-4 text-center">
+            Página de contacto estática mantenida en el dominio.
+        </p>
+    </div>
+</body>
+</html>
